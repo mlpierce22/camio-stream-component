@@ -1,0 +1,15 @@
+/*! http://mths.be/endswith v0.2.0 by @mathias */
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license Angular v8.2.14
+ * (c) 2010-2019 Google LLC. https://angular.io/
+ * License: MIT
+ */
