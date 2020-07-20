@@ -54,3 +54,28 @@ connectedCallback(){
 }
 </script>
 ```
+
+## Schema for this web component (WIP):
+### Inputs
+- *stream*
+  - Payload: LiveStream
+  - Description: The livestream and it's metadata which will be used to embed the component.
+
+- *streamDim*
+  - Payload: VideoDimensions
+  - Description: Used to dynamically adjust the video's dimensions so it should work on mobile screens.
+
+- *posterUrl*
+  - Payload: string or null
+  - Description: Used to determine if the stream should be displaying a poster image, or if the stream should be live. To make the stream show, set this to null and make sure the component is recieving a .m3u8 manifest file in the stream input.
+
+### Outputs
+- *focusVideo*
+  - Payload: none
+  - Triggered: Any time the user clicks on the stream component
+  - Description: When the user clicks on the stream, you may want to focus on that screen somehow.
+
+- *showBorder*
+  - Payload: boolean
+  - Triggered: On mouseover, dispatch true, on mouseleave, dispatch false
+  - Description: When the user hovers over the stream, an event is dispached with a 'true' payload, and when the user unhovers over the screen, the event has a 'false' payload
