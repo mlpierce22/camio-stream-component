@@ -7,6 +7,7 @@ import {
   OnChanges,
   SimpleChanges,
   ChangeDetectorRef,
+  ViewEncapsulation,
 } from "@angular/core";
 import { Subject } from "rxjs";
 import Hls from "hls.js";
@@ -15,7 +16,8 @@ import { LiveStream, VideoDimensions } from './app.models';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AppComponent implements OnInit, OnChanges {
 
