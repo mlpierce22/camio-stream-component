@@ -11,7 +11,6 @@
     "el-build": "npm run el-build-task && npm run el-package-task",
     "el-build-task": "ng build --prod --output-hashing=none",
     "el-package-task": "cat ./docs/{polyfills-es5,runtime-es5,main-es5,scripts}.js > ./elements/camio-live-streams.js"
-
   },
   "private": true,
   "dependencies": {
@@ -24,11 +23,12 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "@webcomponents/custom-elements": "^1.4.1",
+    "document-register-element": "^1.7.2",
     "hls.js": "^0.10.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1",
-    "document-register-element": "^1.7.2"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.12",
